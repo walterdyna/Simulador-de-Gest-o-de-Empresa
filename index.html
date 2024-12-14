@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulador de Gestão de Empresa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Simulador de Gestão de Empresa</h1>
+    </header>
+    <main>
+      <div id="gameArea">
+        <section id="setup" class="hidden">
+          <h2>Configuração Inicial</h2>
+          <input type="text" id="companyName" placeholder="Nome da Empresa">
+          <select id="sector">
+            <option value="tecnologia">Tecnologia</option>
+            <option value="manufatura">Manufatura</option>
+            <option value="comércio">Comércio</option>
+          </select>
+          <button id="startGame">Iniciar</button>
+        </section>
+        <section id="dashboard" class="hidden">
+          <h2 id="companyHeader">Gestão de <span id="companyDisplay"></span></h2>
+          <div id="resources">
+            <p><strong>Dinheiro:</strong> R$ <span id="money">100000</span></p>
+            <p><strong>Funcionários:</strong> <span id="employees">10</span></p>
+            <p><strong>Satisfação:</strong> <span id="satisfaction">75%</span></p>
+          </div>
+          <div id="actions">
+            <h3>Ações</h3>
+            <button id="hireEmployee">Contratar Funcionário (-R$ 5,000)</button>
+            <button id="fireEmployee">Demitir Funcionário (+R$ 3,000)</button>
+            <button id="investMarketing">Investir em Marketing (-R$ 10,000)</button>
+            <button id="increaseProduction">Aumentar Produção (-R$ 7,000)</button>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body><!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulador de Gestão de Empresa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Simulador de Gestão de Empresa</h1>
+    </header>
+    <main>
+      <div id="gameArea">
+        <!-- Seção inicial para configuração -->
+        <section id="setup">
+          <h2>Configuração Inicial</h2>
+          <label for="companyName">Nome da Empresa:</label>
+          <input type="text" id="companyName" placeholder="Nome da Empresa">
+          
+          <label for="sector">Setor:</label>
+          <select id="sector">
+            <option value="tecnologia">Tecnologia</option>
+            <option value="manufatura">Manufatura</option>
+            <option value="comercio">Comércio</option>
+          </select>
+          
+          <button id="startGame">Iniciar</button>
+        </section>
+
+        <!-- Seção do dashboard -->
+        <section id="dashboard" class="hidden">
+          <h2 id="companyHeader">Gestão de <span id="companyDisplay"></span></h2>
+          <div id="resources">
+            <p><strong>Dinheiro:</strong> R$ <span id="money">100000</span></p>
+            <p><strong>Funcionários:</strong> <span id="employees">10</span></p>
+            <p><strong>Satisfação:</strong> <span id="satisfaction">75%</span></p>
+          </div>
+          <div id="actions">
+            <h3>Ações</h3>
+            <button id="hireEmployee">Contratar Funcionário (-R$ 5,000)</button>
+            <button id="fireEmployee">Demitir Funcionário (+R$ 3,000)</button>
+            <button id="investMarketing">Investir em Marketing (-R$ 10,000)</button>
+            <button id="increaseProduction">Aumentar Produção (-R$ 7,000)</button>
+    
+
+</html>
